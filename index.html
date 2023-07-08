@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header id="header" class="header">
+                <h1 class="title">To-do list</h1>
+                <div class="input-wrapper">
+                    <input class="inputBox" type="text" id="taskInput" placeholder="Do some homework...">
+                    <span class="addBtn" id="addBtn">Add</span>
+                </div>
+                
+        </header>
+        <section class="list-wrapper">
+            <ul class="list" id="list">
+                <li class="item item-1">Clean my Room</li>
+                <li class="item item-2 checked">Do some coding</li>
+                <li class="item item-3">Eat some food</li>
+                <li class="item item-4">Do next coding task</li>
+            </ul>
+        </section>
+        <div class="addBtn2" id="addBtn2">+</div>
+
+        <div id="overlay" class="overlay">
+            <div class="popUp">
+                <div class="popUp-txt">
+                    <h2>Alert <span id="closeOverlay">&times;</span></h2>
+                    <div class="txt">
+                        <p>Please enter something!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Assets/js/main.js"></script>
+</body>
+</html>
